@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+ENV/
+env/
+myenv/
+env.bak/
+venv.bak/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static_root/
+media_root/
+
+# Database migrations - KEEP your migrations, but exclude __pycache__ inside them
+# We want to keep migration files for version control, but not the compiled cache
+**/migrations/__pycache__/*
+
+# Environment Variables 
+.env
+.env.local
+.env.production
+.env.development
+.env.example  # Keep this one as template, but with dummy values
+
+# IDE - Keep workspace clean
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.coverage.*
+*.cover
+.hypothesis/
+
+# Deployment
+static/
+media/
+*.pid
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Django DRF
+*.db
+*.rdb
+
+# Secrets - NEVER commit these
+*.pem
+*.key
+*.crt
+.secrets/
+
+# Jupyter Notebooks (if you use for testing)
+.ipynb_checkpoints/
+*.ipynb
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pyre
+.pyre/
